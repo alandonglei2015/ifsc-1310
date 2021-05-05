@@ -1,0 +1,303 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.clear {
+    clear: both;
+}
+
+#navbar {
+     z-index: 3;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 8%;
+    background-color: #000;
+    opacity: 80%;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Zen Dots, monospace;
+    font-size:0.8vw;
+    float: right;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 80px;
+    font-weight: bold;
+    
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+}
+
+#navbar a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#navbar a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#navbar img {
+    margin-top: 30px;
+    width: 300px;
+    margin-left: 5%;
+    float: left;
+}
+
+#navbar a:hover {
+    transform: scale(1.2, 1.2);
+    color: white;
+}
+
+.divUnderNav{
+    height:110px;;
+    background-color: #000;
+}
+
+
+#launchimage {
+
+    width: 100%;
+    height: 1280px;
+    object-fit: cover;
+}
+
+#topimage {
+    position: relative;
+}
+
+
+#overviewContainer {
+    width: 100%;
+
+}
+
+#overview {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: absolute;
+    
+
+}
+
+#overview h1{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 2vw;
+}
+
+#overview h2{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1.6vw;
+}
+
+.circleOne {
+    
+  width: 40%;
+    height: auto;
+    padding-top: 40%;
+    border-color: #000000;
+    border-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+    position: absolute;
+    right: -540px;
+    
+}
+
+.circleTwo{
+    width: 40%;
+    height: auto;
+    padding-top: 40%;
+    margin-top: 24%;
+z-index: 0;
+    border-color: #000000;
+    border-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+    position: absolute;
+    left: -540px;
+    float:left;
+}
+
+
+.saturnOne {
+    width: 50px;
+    height: 50px;
+    margin-top: 30%;
+    margin-left: 20%;
+    
+position: absolute;
+    background: linear-gradient(35deg,
+            #D38312,
+            #A83279);
+    border-radius: 50%;
+   
+    
+    left: -570px;
+    top: 1700px;
+
+    z-index: infinite;
+   
+    -webkit-animation: myOrbitI 4s linear infinite; 
+       -moz-animation: myOrbitI 4s linear infinite; 
+         -o-animation: myOrbitI 4s linear infinite; 
+            animation: myOrbitI 4s linear infinite; 
+    
+    
+    
+}
+
+
+@-webkit-keyframes myOrbitI {
+    from { -webkit-transform: rotate(0deg) translateX(1150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(1150px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbitI {
+    from { -moz-transform: rotate(0deg) translateX(1150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(1150px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbitI {
+    from { -o-transform: rotate(0deg) translateX(1150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(1150px) rotate(-360deg); }
+}
+
+@keyframes myOrbitI {
+    from { transform: rotate(0deg) translateX(500px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(500px) rotate(-360deg); }
+}
+
+
+
+
+.saturnTwo {
+    width: 50px;
+    height: 50px;
+    margin-top: 8%;
+    margin-left: 120%;
+    
+position: absolute;
+    background: linear-gradient(35deg,
+            #A83279,
+        #D38312);
+    border-radius: 50%;
+    
+    
+    left: -470px;
+    top: 1687px;
+
+    z-index: infinite;
+   
+    -webkit-animation: myOrbitII 4s linear infinite; 
+       -moz-animation: myOrbitII 4s linear infinite; 
+         -o-animation: myOrbitII 4s linear infinite; 
+            animation: myOrbitII 4s linear infinite; 
+    
+    
+}
+
+
+@-webkit-keyframes myOrbitII {
+    from { -webkit-transform: rotate(0deg) translateX(1150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(1150px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbitII {
+    from { -moz-transform: rotate(0deg) translateX(1150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(1150px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbitII {
+    from { -o-transform: rotate(0deg) translateX(1150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(1150px) rotate(-360deg); }
+}
+
+@keyframes myOrbitII {
+    from { transform: rotate(90deg) translateX(500px) rotate(-90deg); }
+    to   { transform: rotate(450deg) translateX(500px) rotate(-450deg); }
+}
+
+
+
+#recentMission{
+    
+    background-color: #000000;
+    padding: 3%;
+    margin-top: 1600px;
+    margin-bottom: 0;
+    
+}
+
+#recentMission h2{
+    
+    text-align: center;
+    color: #ffffff;
+    font-family: Zen Dots, monospace;
+    font-size: 2vw;
+    
+    
+}
+
+pre {
+    
+    text-align: center;
+    color:#ffffff;
+    padding-top: 30px;
+    font-size: 1vw;
+    font-family: Roboto, monospace;
+    
+    
+}
+
+footer {
+    background-color: #000;
+    height: 200px;
+}
+
+footer h3{
+    text-align: center;
+    padding-top: 50px;
+    font-family: Zen Dots, monospace;
+    font-size: 0.9vw;
+    color: white;
+    
+}
+
+footer h3 a{
+    color: aqua;
+}
+
+footer h4{
+    text-align: center;
+    padding-top: 20px;
+    font-size:0.7vw;
+    margin-top: 0;
+    color:white;
+}
+
+footer h4 a{
+    color:aqua;
+}
+
+
+
+

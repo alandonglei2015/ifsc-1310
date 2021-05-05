@@ -1,0 +1,177 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+#navbar {
+    z-index: 3;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 8%;
+    background-color: #000;
+    opacity: 80%;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Zen Dots, monospace;
+    font-size:0.8vw;
+    float: right;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 80px;
+    font-weight: bold;
+    
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+}
+
+#navbar a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#navbar a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#navbar img {
+    margin-top: 30px;
+    width: 300px;
+    margin-left: 5%;
+    float: left;
+}
+
+#navbar a:hover {
+    transform: scale(1.2, 1.2);
+    color: white;
+}
+
+.divUnderNav{
+    height:110px;;
+    background-color: #000;
+}
+
+#overview {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 200px;
+
+}
+
+.galleryContainer {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.galleryContainer h5 {
+    
+    margin-top: 5%;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Zen Dots, monospace;
+    font-size: 2vw;
+
+}
+
+
+
+.galleryContainer a{
+    font-family: Roboto;
+    font-size: 1.5vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+.gallerySmallImg a:hover {
+    text-decoration:underline;
+    color: #fff;
+}
+
+.questions{
+    text-align: center;
+    padding-top: 2%;
+    
+}
+
+.lightbox {
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+
+}
+
+a div {
+    position: relative;
+    margin: auto auto;
+    text-align: center;
+    width:70%;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+p {
+    font-size: 2vw;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+
+footer {
+    background-color: #000;
+    height: 200px;
+    margin-top: 5%;
+
+}
+
+footer h3{
+    text-align: center;
+    padding-top: 50px;
+    font-family: Zen Dots, monospace;
+    font-size: 0.9vw;
+    color: white;
+    
+}
+
+footer h3 a{
+    color: aqua;
+}
+
+footer h4{
+    text-align: center;
+    padding-top: 20px;
+    font-size:0.7vw;
+    margin-top: 0;
+    color:white;
+}
+
+footer h4 a{
+    color:aqua;
+}
